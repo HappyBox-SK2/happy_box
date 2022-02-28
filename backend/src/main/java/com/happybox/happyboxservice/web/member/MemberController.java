@@ -1,4 +1,4 @@
-package com.happybox.happybox.controller;
+package com.happybox.happyboxservice.web.member;
 
 import java.util.List;
 
@@ -8,15 +8,15 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.happybox.happybox.domain.Member;
-import com.happybox.happybox.service.MemberService;
+import com.happybox.happyboxservice.domain.Member;
+import com.happybox.happyboxservice.service.MemberServiceImpl;
 
 @Controller
 public class MemberController {
-	private final MemberService memberService;
+	private final MemberServiceImpl memberService;
 
 	@Autowired
-	public MemberController(MemberService memberService) {
+	public MemberController(MemberServiceImpl memberService) {
 		this.memberService = memberService;
 	}
 
@@ -27,9 +27,6 @@ public class MemberController {
 
 	@PostMapping("/members/new")
 	public String create(MemberForm form) {
-		Member member = new Member.Builder(form.getName(), "ss", "ss").build();
-
-		memberService.join(member);
 		return "redirect:/";
 	}
 

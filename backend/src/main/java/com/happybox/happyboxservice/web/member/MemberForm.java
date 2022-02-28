@@ -1,7 +1,6 @@
-package com.happybox.happybox.controller;
+package com.happybox.happyboxservice.web.member;
 
 public class MemberForm {
-
 	private String name;
 
 	public String getName() {
@@ -11,5 +10,4 @@ public class MemberForm {
 	public void setName(String name) {
 		this.name = name;
 	}
-
 }

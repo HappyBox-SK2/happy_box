@@ -1,4 +1,4 @@
-package com.happybox.happybox.controller;
+package com.happybox.happyboxservice.web.home;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
