@@ -5,47 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15d753cf-885a-4626-b55b-14693c48d9b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/happybox.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/sql/ddl.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/aop/TimeTraceAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/domain/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/domain/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/domain/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/domain/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/exception/AbsentMemberException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/exception/AbsentPostException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/exception/DuplicatedMemberException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/exception/ExceptionMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/repository/MemberRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/repository/PostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/repository/PostRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/MemberServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/PostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/PostServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/test/java/com/happybox/happyboxservice/service/MemberServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/test/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happybox/HappyBoxApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/HappyBoxApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happybox/SpringConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happybox/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/home/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happybox/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/member/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happybox/controller/MemberForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/member/MemberForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happybox/domain/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happybox/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/repository/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happybox/repository/MemoryMemberRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happybox/service/MemberService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/happybox/happybox/HappyBoxApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/happybox/happyboxservice/HappyBoxApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/happybox/happybox/repository/MemoryMemberRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/happybox/happybox/service/MemberServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/domain/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/domain/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/domain/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/domain/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/member/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/member/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/member/MemberForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/member/MemberForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +123,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/src/test/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -316,6 +281,7 @@
       <workItem from="1645112202217" duration="1653000" />
       <workItem from="1646030359361" duration="2707000" />
       <workItem from="1646033886447" duration="17498000" />
+      <workItem from="1646110681177" duration="397000" />
     </task>
     <servers />
   </component>

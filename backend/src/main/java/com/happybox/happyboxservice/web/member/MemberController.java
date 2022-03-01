@@ -11,13 +11,18 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.happybox.happyboxservice.domain.Member;
 import com.happybox.happyboxservice.service.MemberServiceImpl;
 
+import lombok.RequiredArgsConstructor;
+
 @Controller
+@RequiredArgsConstructor
 public class MemberController {
+
 	private final MemberServiceImpl memberService;
 
-	@Autowired
-	public MemberController(MemberServiceImpl memberService) {
-		this.memberService = memberService;
+	@GetMapping("/members/new")
+	public String createForm(Model model) {
+
+		return "members/createMemberForm";
 	}
 
 	@GetMapping("/members/new")
