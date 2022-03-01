@@ -2,13 +2,16 @@ package com.happybox.happyboxservice.web.member;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.happybox.happyboxservice.domain.Member;
-import com.happybox.happyboxservice.service.MemberServiceImpl;
+import com.happybox.happyboxservice.service.MemberService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -16,7 +19,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class MemberController {
 
-	private final MemberServiceImpl memberService;
+	private final MemberService memberService;
 
 	@GetMapping("/members/new")
 	public String createForm(Model model) {
@@ -25,9 +28,16 @@ public class MemberController {
 	}
 
 	@PostMapping("/members/new")
-	public String create(MemberForm form) {
+	public String create(@Valid MemberForm form, BindingResult result) {
+		if (result.hasErrors()) {
+			return "members/createMemberForm";
+		}
+
+		Member member = new Member.Builder().name(form.getName()).build();
+		memberService.join(member);
 		return "redirect:/";
 	}
+
 
 	@GetMapping("/members")
 	public String list(Model model) {
