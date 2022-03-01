@@ -8,7 +8,7 @@ React / TypeScript
 
 ### 백엔드 스택
 
-Spring
+Spring / JPA
 
 ### 서비스 방향
 
