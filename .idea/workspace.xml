@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="15d753cf-885a-4626-b55b-14693c48d9b2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/domain/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/domain/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/domain/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/domain/Post.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/member/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/member/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/member/MemberForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/member/MemberForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,7 +277,7 @@
       <workItem from="1645112202217" duration="1653000" />
       <workItem from="1646030359361" duration="2707000" />
       <workItem from="1646033886447" duration="17498000" />
-      <workItem from="1646110681177" duration="397000" />
+      <workItem from="1646110681177" duration="1671000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,6 @@ package com.happybox.happyboxservice.web.member;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,12 +20,7 @@ public class MemberController {
 
 	@GetMapping("/members/new")
 	public String createForm(Model model) {
-
-		return "members/createMemberForm";
-	}
-
-	@GetMapping("/members/new")
-	public String createForm() {
+		model.addAttribute("memberForm", new MemberForm());
 		return "members/createMemberForm";
 	}
 
