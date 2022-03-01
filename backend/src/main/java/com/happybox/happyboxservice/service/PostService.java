@@ -8,6 +8,8 @@ public interface PostService {
 
 	void savePost(Post post);
 
+	void updatePost(Long postId, PostDto param); // TODO POST parameter 를 만들자.
+
 	List<Post> findPosts();
 
 	Post findOne(Long id);

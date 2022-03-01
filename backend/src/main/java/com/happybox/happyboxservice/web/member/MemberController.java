@@ -43,6 +43,7 @@ public class MemberController {
 	public String list(Model model) {
 		List<Member> members = memberService.findMembers();
 		model.addAttribute("members", members);
+		// TODO 화면 DTO로 변환하여 출력하는 것이 좋다. 엔티티는 외부에 절대로 그냥 반환하면 안된다.
 		return "members/memberList";
 	}
 }

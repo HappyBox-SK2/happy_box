@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15d753cf-885a-4626-b55b-14693c48d9b2" name="Changes" comment="">
+    <list default="true" id="15d753cf-885a-4626-b55b-14693c48d9b2" name="Changes" comment="#4 [추가] 게시글 업데이트 메서드 추가">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/PostDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/post/PostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/post/PostForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/MemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/PostServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/member/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/member/MemberController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +59,8 @@
         <option value="HTML File" />
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -277,8 +283,16 @@
       <workItem from="1645112202217" duration="1653000" />
       <workItem from="1646030359361" duration="2707000" />
       <workItem from="1646033886447" duration="17498000" />
-      <workItem from="1646110681177" duration="3421000" />
+      <workItem from="1646110681177" duration="9888000" />
     </task>
+    <task id="LOCAL-00001" summary="#4 [리팩터링] 변수명 변경">
+      <created>1646127012924</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646127012924</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +311,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="#4 [리팩터링] 변수명 변경" />
+    <MESSAGE value="#4 [추가] 게시글 업데이트 메서드 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="#4 [추가] 게시글 업데이트 메서드 추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
