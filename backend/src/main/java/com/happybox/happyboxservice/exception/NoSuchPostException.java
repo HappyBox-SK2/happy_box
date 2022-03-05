@@ -16,5 +16,4 @@ public class NoSuchPostException extends RuntimeException {
 	public NoSuchPostException(Throwable cause) {
 		super(cause);
 	}
-
 }
