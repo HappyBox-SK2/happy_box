@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15d753cf-885a-4626-b55b-14693c48d9b2" name="Changes" comment="#4 [추가] 게시글 업데이트 메서드 추가">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/PostDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/post/PostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/post/PostForm.java" afterDir="false" />
+    <list default="true" id="15d753cf-885a-4626-b55b-14693c48d9b2" name="Changes" comment="#4 [리팩터링] 게시글 업데이트 메서드 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/api/MemberApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/api/MemberApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/domain/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/domain/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/MemberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/service/PostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/member/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/happybox/happyboxservice/web/member/MemberController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +130,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -160,7 +158,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MemberServiceTest">
+  <component name="RunManager" selected="Spring Boot.HappyboxApplication">
     <configuration name="MemberServiceIntTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="happybox.test" />
       <extension name="coverage">
@@ -240,9 +238,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.HappyboxApplication" />
         <item itemvalue="JUnit.MemberServiceTest" />
         <item itemvalue="JUnit.MemberServiceTest.join" />
-        <item itemvalue="Spring Boot.HappyboxApplication" />
         <item itemvalue="JUnit.MemberServiceIntTest" />
         <item itemvalue="JUnit.MemberServiceIntTest.중복_회원_예외" />
       </list>
@@ -283,7 +281,11 @@
       <workItem from="1645112202217" duration="1653000" />
       <workItem from="1646030359361" duration="2707000" />
       <workItem from="1646033886447" duration="17498000" />
-      <workItem from="1646110681177" duration="9888000" />
+      <workItem from="1646110681177" duration="18632000" />
+      <workItem from="1646238011239" duration="2134000" />
+      <workItem from="1646294382257" duration="21000" />
+      <workItem from="1646306263686" duration="11696000" />
+      <workItem from="1646459967605" duration="2620000" />
     </task>
     <task id="LOCAL-00001" summary="#4 [리팩터링] 변수명 변경">
       <created>1646127012924</created>
