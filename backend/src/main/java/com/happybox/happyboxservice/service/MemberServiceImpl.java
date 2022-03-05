@@ -54,8 +54,8 @@ public class MemberServiceImpl implements MemberService {
 
 	@Transactional
 	@Override
-	public void changeName(String name, String password) {
+	public void changeName(String name, UpdateMemberDto memberDto) {
 		Member member = findOne(name);
-		member.updateName(name, password);
+		member.updateName(memberDto.getUpdateData(), memberDto.getPassword());
 	}
 }

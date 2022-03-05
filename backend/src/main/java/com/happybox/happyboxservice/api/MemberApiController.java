@@ -28,8 +28,8 @@ public class MemberApiController {
 
 	@GetMapping("/api/members")
 	public ResponseResult members() {
-		List<MemberDto> collect = memberService.findMembers().stream()
-			.map(member -> new MemberDto(member.getName()))
+		List<FindMemberDto> collect = memberService.findMembers().stream()
+			.map(member -> new FindMemberDto(member.getName()))
 			.collect(Collectors.toList());
 		return new ResponseResult(collect);
 	}
@@ -46,7 +46,9 @@ public class MemberApiController {
 		@PathVariable("name") String name,
 		@RequestBody @Valid UpdateMemberRequest request) {
 
-		memberService.changeName(request.getName(), request.getPassword());
+		com.happybox.happyboxservice.service.UpdateMemberDto memberDto = new com.happybox.happyboxservice.service.UpdateMemberDto(request.getName(), request.getPassword());
+
+		memberService.changeName(request.getName(), memberDto);
 		Member findMember = memberService.findOne(name);
 		return new UpdateMemberResponse(findMember.getId(), findMember.getName());
 	}
@@ -59,7 +61,7 @@ public class MemberApiController {
 
 	@Data
 	@AllArgsConstructor
-	static class MemberDto {
+	static class FindMemberDto {
 		private String name;
 	}
 
@@ -91,6 +93,15 @@ public class MemberApiController {
 	static class UpdateMemberResponse {
 		private Long id;
 		private String name;
+	}
+
+	@Data
+	@AllArgsConstructor
+	static class UpdateMemberDto {
+		@NotEmpty
+		private String name;
+		@NotEmpty
+		private String password;
 	}
 
 }

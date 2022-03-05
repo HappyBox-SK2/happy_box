@@ -55,7 +55,7 @@ public class Member {
 		this.password = updatePassword;
 	}
 
-	public void validatePassword(String password) {
+	private void validatePassword(String password) {
 		if (!getPassword().equals(password)) {
 			throw new PasswordDoesNotMatchException(PASSWORD_DOES_NOT_MATCH_MASSAGE);
 		}
