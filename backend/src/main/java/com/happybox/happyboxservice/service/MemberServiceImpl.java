@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.happybox.happyboxservice.domain.Member;
-import com.happybox.happyboxservice.exception.NoSuchMemberException;
 import com.happybox.happyboxservice.exception.DuplicatedMemberException;
+import com.happybox.happyboxservice.exception.NoSuchMemberException;
 import com.happybox.happyboxservice.repository.MemberRepository;
 
 import lombok.RequiredArgsConstructor;
@@ -44,5 +44,18 @@ public class MemberServiceImpl implements MemberService {
 	public Member findOne(Long id) {
 		return memberRepository.findById(id)
 			.orElseThrow(() -> new NoSuchMemberException(NO_SUCH_MEMBER_MASSAGE));
+	}
+
+	@Override
+	public Member findOne(String name) {
+		return memberRepository.findByName(name)
+			.orElseThrow(() -> new NoSuchMemberException(NO_SUCH_MEMBER_MASSAGE));
+	}
+
+	@Transactional
+	@Override
+	public void update(String name, String password) {
+		Member member = findOne(name);
+		member.updateName(name, password);
 	}
 }

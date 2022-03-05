@@ -17,4 +17,8 @@ public interface MemberService {
 	List<Member> findMembers();
 
 	Member findOne(Long id);
+
+	Member findOne(String name);
+
+	void update(String name, String password);
 }
