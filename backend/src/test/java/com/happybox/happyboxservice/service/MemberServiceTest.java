@@ -19,7 +19,7 @@ import com.happybox.happyboxservice.repository.MemberRepository;
 class MemberServiceTest {
 
 	@Autowired
-	MemberServiceImpl memberService;
+	MemberService memberService;
 	@Autowired
 	MemberRepository memberRepository;
 
@@ -27,7 +27,7 @@ class MemberServiceTest {
 	@DisplayName("회원가입")
 	public void join() throws Exception {
 		//given
-		Member member = new Member.Builder().name("Lim").build();
+		Member member = new Member.Builder().name("Lim").password("password").build();
 
 		//when
 		Long savedId = memberService.join(member);
