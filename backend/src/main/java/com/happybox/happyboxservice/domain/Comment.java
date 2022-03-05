@@ -1,6 +1,7 @@
 package com.happybox.happyboxservice.domain;
 
 import static javax.persistence.FetchType.*;
+import static lombok.AccessLevel.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,10 +10,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 import lombok.Getter;
-import lombok.Setter;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Getter
+@NoArgsConstructor(access = PROTECTED)
 public class Comment {
 
 	@Id
@@ -26,9 +28,6 @@ public class Comment {
 	@ManyToOne(fetch = LAZY)
 	@JoinColumn(name = "member_id")
 	private Member member;
-
-	protected Comment() {
-	}
 
 	public Comment(Post post, Member member) {
 		this.member = member;
