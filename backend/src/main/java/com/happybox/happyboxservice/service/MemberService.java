@@ -20,5 +20,5 @@ public interface MemberService {
 
 	Member findOne(String name);
 
-	void update(String name, String password);
+	void changeName(String name, String password);
 }
